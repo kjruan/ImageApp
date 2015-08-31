@@ -1,0 +1,21 @@
+<div class="panel panel-primary" ng-controller="imagesCtrl">
+	<!-- <h3 class="panel-heading">Products</h3>
+	<ng-include src="'partials/tableView.html'" ng-show="displayMode == 'list'"></ng-include>
+	<ng-include src="'partials/editorView.html'" ng-show="displayMode == 'edit'"></ng-include> -->
+	<form action="api/file-upload" name="upload" class="dropzone dz-clickable" id="dropzoneArea" enctype="multipart/form-data" method = "post">
+		<input type="file" name="file" />                      
+		<button id="uploadSubmitter" class="btn btn-primary btn-large" type="submit">Finished</button>
+	</form>
+</div>
+<div class="container">
+	<div class="row">
+		  <div class="col-xs-3" ng-repeat="image in images">
+		      <button class="btn btn-xs btn-primary" ng-click="deleteImage(image)">
+					Delete
+					</button>
+        <a ng-href="{{ renderImageUrl(image) }}" class="thumbnail">{{ renderImageUrl(image) }}
+        	<img class="center-cropped" ng-src="{{ renderImageUrl(image) }}" />
+        </a>
+    </div>
+	</div>
+</div>

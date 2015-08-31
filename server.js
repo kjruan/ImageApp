@@ -12,7 +12,7 @@ var captricity = require('./api/captricity');
 
 var db_name = 'captricity';
 var mongoose = require('mongoose');
-var mongoose_connection_string = 'mongodb://localhost/' + db_name;
+var mongoose_connection_string =  'mongodb://heroku_wfp0t23b:heroku_wfp0t23b@ds035563.mongolab.com:35563/heroku_wfp0t23b';
 
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
   mongodb_connection_string = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;

@@ -1,7 +1,7 @@
 // The example code uses crypto-js library (http://code.google.com/p/crypto-js/#SHA-2) to generate the signature
 var express = require('express');
 var crypto = require('crypto');
-var returnURL = 'localhost:3000';
+var returnURL = 'https://calm-coast-6141.herokuapp.com';
 var thirdpartyID = '1283';
 var thirdpartySecretKey = '8529874849d34d35a48da71448aad16a';
 

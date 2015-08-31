@@ -1,5 +1,5 @@
 angular.module("exampleApp")
-	.constant("baseUrl", "http://localhost:8080/api/images/")
+	.constant("baseUrl", "http://calm-coast-6141.herokuapp.com/api/images/")
 	.controller("imagesCtrl", function ($scope, $http, baseUrl) {
 		$scope.displayMode = "list";
 
